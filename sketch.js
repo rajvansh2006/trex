@@ -60,7 +60,7 @@ function draw() {
   text("score :"+count,450,50);
   if(gameState===PLAY){
     
-  if(keyDown("space")) {
+  if(keyDown("space")&&trex.y>=159) {
     trex.velocityY = -10;
   }
   count =count+ Math.round(World.frameRate/60);
